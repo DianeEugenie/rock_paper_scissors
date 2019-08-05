@@ -2,10 +2,7 @@ require('minitest/autorun')
 require_relative('../models/game.rb')
 
 class TestGame < MiniTest::Test
-  #
-  # def setup
-  #   @game = Game.new()
-  # end
+
 
   def test_rocks_wins()
     assert_equal("Rock", Game.play("Rock", "Scissors"))
