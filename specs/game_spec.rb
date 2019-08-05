@@ -4,17 +4,17 @@ require_relative('../models/game.rb')
 class TestGame < MiniTest::Test
 
   def setup
-    @game = Game.new("Rocks", "Scissors")
+    @game = Game.new("Rock", "Scissors")
     @game2 = Game.new("Scissors", "Paper")
-    @game3 = Game.new("Paper", "Rocks")
+    @game3 = Game.new("Paper", "Rock")
     @game4 = Game.new("Paper", "Scissors")
-    @game5 = Game.new("Scissors", "Rocks")
-    @game6 = Game.new("Rocks", "Paper")
-    @game7 = Game.new("Rocks", "Rocks")
+    @game5 = Game.new("Scissors", "Rock")
+    @game6 = Game.new("Rock", "Paper")
+    @game7 = Game.new("Rock", "Rock")
   end
 
   def test_rocks_wins()
-    assert_equal("Rocks", @game.play())
+    assert_equal("Rock", @game.play())
   end
 
   def test_scissors_wins()
@@ -30,7 +30,7 @@ class TestGame < MiniTest::Test
   end
 
   def test_rocks_wins_position_2()
-    assert_equal("Rocks", @game5.play())
+    assert_equal("Rock", @game5.play())
   end
 
   def test_paper_wins_position_2()

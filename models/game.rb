@@ -8,20 +8,20 @@ class Game
   def play()
     case
 
-    when @hand1 == "Rocks" && @hand2 == "Scissors"
+    when @hand1 == "Rock" && @hand2 == "Scissors"
       return @hand1
     when @hand1 == "Scissors" && @hand2 == "Paper"
       return @hand1
-    when @hand1 == "Paper" && @hand2 == "Rocks"
+    when @hand1 == "Paper" && @hand2 == "Rock"
       return @hand1
     when @hand1 == "Paper" && @hand2 == "Scissors"
       return @hand2
-    when @hand1 == "Rocks" && @hand2 == "Paper"
+    when @hand1 == "Rock" && @hand2 == "Paper"
       return @hand2
-    when @hand1 == "Scissors" && @hand2 == "Rocks"
+    when @hand1 == "Scissors" && @hand2 == "Rock"
       return @hand2
     else
-      return "Draw!"
+      return "No one"
     end
 
   end
