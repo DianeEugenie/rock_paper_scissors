@@ -1,0 +1,30 @@
+body {
+  font-family: 'Overlock', cursive;
+  text-align: center;
+  background-color: #D5F5E3;
+  color: #556B2F;
+}
+
+h1 {
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 3em;
+}
+
+a {
+  text-decoration: none;
+  color: #556B2F;
+  border: 1px solid #556B2F;
+  border-radius: 3px;
+  padding: 2px;
+}
+
+a:active, a:hover {
+  background-color: #556B2F;
+  border: 1px solid #D5F5E3;
+  border-radius: 3px;
+  color: #D5F5E3;
+}
+
+ul {
+  list-style-type: none;
+}

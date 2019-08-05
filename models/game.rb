@@ -20,8 +20,10 @@ class Game
       return hand2
     when hand1 == "Scissors" && hand2 == "Rock"
       return hand2
+    when hand1 == hand2
+      return "It's a draw! No one"
     else
-      return "No one"
+      return "Mmm... please check your spelling! For this game, no one"
     end
 
   end
