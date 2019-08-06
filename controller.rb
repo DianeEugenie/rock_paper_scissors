@@ -8,7 +8,7 @@ get '/' do
   erb(:home)
 end
 
-get '/:hand1/:hand2' do
+get '/play/:hand1/:hand2' do
 
   @result = Game.play(params[:hand1], params[:hand2])
 

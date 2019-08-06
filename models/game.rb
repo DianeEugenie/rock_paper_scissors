@@ -9,21 +9,21 @@ class Game
     case
 
     when hand1 == "Rock" && hand2 == "Scissors"
-      return hand1
+      return "Player 1 wins by playing #{hand1}!"
     when hand1 == "Scissors" && hand2 == "Paper"
-      return hand1
+      return "Player 1 wins by playing #{hand1}!"
     when hand1 == "Paper" && hand2 == "Rock"
-      return hand1
+      return "Player 1 wins by playing #{hand1}!"
     when hand1 == "Paper" && hand2 == "Scissors"
-      return hand2
+      return "Player 2 wins by playing #{hand2}!"
     when hand1 == "Rock" && hand2 == "Paper"
-      return hand2
+      return "Player 2 wins by playing #{hand2}!"
     when hand1 == "Scissors" && hand2 == "Rock"
-      return hand2
+      return "Player 2 wins by playing #{hand2}!"
     when hand1 == hand2
-      return "It's a draw! No one"
+      return "It's a draw! No one wins!"
     else
-      return "Mmm... please check your spelling! For this game, no one"
+      return "Mmm... please check your spelling! For this game, no one wins!"
     end
 
   end

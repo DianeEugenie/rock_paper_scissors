@@ -25,6 +25,6 @@ a:active, a:hover {
   color: #D5F5E3;
 }
 
-ul {
+ul, li {
   list-style-type: none;
 }
